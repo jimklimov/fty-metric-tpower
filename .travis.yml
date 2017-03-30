@@ -40,6 +40,9 @@ matrix:
       apt:
         packages:
         - valgrind
+        - libmysqlclient-dev
+        - libsqlite3-dev
+        - libpq-dev
   - env: BUILD_TYPE=valgrind CI_CZMQ_VER=4
     os: linux
     dist: trusty
